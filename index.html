@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Percobaan API</title>
+  <style>
+   tr {
+    display: flex;
+   }
+   td {
+    min-width: 180px;
+    display: grid;
+    place-items: center;
+   }
+
+   .data {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   @media (max-width: 1000px) {
+    .data {
+     width: 1200px;
+     overflow-x: scroll;
+    }
+   }
+  </style>
+ </head>
+ <body>
+  <h1>Search Surah in Qur'an</h1>
+  <input id="input" type="text" />
+  <button id="btn-tampilkan">tampilkan</button>
+
+  <div class="data">
+   <table border="1" id="table-data"></table>
+  </div>
+ </body>
+ <script src="src/app.js"></script>
+</html>
