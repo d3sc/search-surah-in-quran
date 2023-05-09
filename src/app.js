@@ -1,4 +1,4 @@
-let data = fetch("http://api.alquran.cloud/v1/surah")
+let data = fetch("https://api.alquran.cloud/v1/surah")
  .then((response) => {
   return response.json();
  })
